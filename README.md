@@ -6,5 +6,5 @@
 ## Installation
 
 ```
-composer install vi-tech/form-normalizer
+composer require vi-tech/form-normalizer
 ```
