@@ -7,7 +7,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Max107\FormNormalizer;
+namespace ViTech\FormNormalizer;
 
 use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormErrorIterator;

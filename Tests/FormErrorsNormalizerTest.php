@@ -7,9 +7,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Max107\FormNormalizer\Tests;
+namespace ViTech\FormNormalizer\Tests;
 
-use Max107\FormNormalizer\FormErrorsNormalizer;
+use stdClass;
+use ViTech\FormNormalizer\FormErrorsNormalizer;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Validator\ValidatorExtension;
 use Symfony\Component\Form\Test\TypeTestCase;
@@ -25,11 +26,14 @@ class FormErrorsNormalizerTest extends TypeTestCase
         ];
     }
 
+    /**
+     * @throws \Symfony\Component\Serializer\Exception\ExceptionInterface
+     */
     public function testSerializer()
     {
         $normalizer = new FormErrorsNormalizer();
 
-        $this->assertFalse($normalizer->supportsNormalization(new \stdClass()));
+        $this->assertFalse($normalizer->supportsNormalization(new stdClass()));
 
         $form = $this
             ->factory
