@@ -1,5 +1,5 @@
 {
-    "name": "vitech/form-normalizer",
+    "name": "vi-tech/form-normalizer",
     "description": "Symfony form errors normalizer",
     "license": "MIT",
     "autoload": {
